@@ -1,31 +1,43 @@
 Algoritmo "funções - exercicio2"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 09/02/2022
 Var
 // Seção de Declarações das variáveis 
 
-a:inteiro
-x:logico
+a:vetor[1..50] de inteiro
+x,maior,menor:inteiro
 
-funcao par_impar:logico
+funcao maior_menor:inteiro
 
 inicio
 
-x<-(a mod 2 = 0)
-
-retorne x
+para x de 1 ate 50 faca
+   se menor>a[x] entao
+      menor<-a[x]
+   fimse
+   se maior<a[x] entao
+      maior<-a[x]
+   fimse
+retorne maior,menor
 
 fimfuncao
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
 
-escreval("Introduza um número inteiro:")
-     leia(a)
 
-x<-par_impar
+para x de 1 ate 50 faca
+     escreval("Introduza 50 números inteiros:")
+     leia(a[x])
+fimpara
 
-se (x)=VERDADEIRO entao
+menor<-a[1]
+valor<-maior_menor
+
+se (valor)=VERDADEIRO entao
       escreval("O número",a," é par")
 senao
       escreval("O número",a," é ímpar")

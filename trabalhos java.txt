@@ -1,0 +1,1191 @@
+****************************************************
+PERIMETRO QUADRADO
+****************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int lado;
+				
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza o comprimento do lado do quadrado: ");
+		lado = scanner.nextInt();
+				
+		System.out.println("O perímetro do quadrado é: "+lado*4);
+		
+		scanner.close();
+				
+	}
+
+}
+
+*****************************************************
+VALOR PAGAR
+*****************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		double preco;
+		double litros;
+		double valor;
+				
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza o preço por litro: ");
+		preco = scanner.nextDouble();
+
+		System.out.println("Introduza a quantidade de litros: ");
+		litros = scanner.nextDouble();
+
+		valor = preco*litros
+				
+		System.out.println("O valor a pagar é: "+valor);
+		
+		scanner.close();
+				
+	}
+
+}
+
+*********************************************************
+MAIOR NUMERO
+*********************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int n1,n2,n3;
+		int maior,menor;
+				
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza o 1º número: ");
+		n1 = scanner.nextInt();
+
+		System.out.println("Introduza o 2º número: ");
+		n2 = scanner.nextInt();
+
+		System.out.println("Introduza o 3º número: ");
+		n3 = scanner.nextInt();
+
+		maior = n1
+		menor = n1
+
+		if(maior<n2)	{
+			maior = n2
+		}
+		if(maior<n3)	{
+			maior = n3
+		}
+		if(menor>n2)	{
+			menor = n2
+		}
+		if(menor>n3)	{
+			menor = n3
+		}
+
+			
+		System.out.println("O maior número é o: "+maior);
+		System.out.println("O menor número é o: "+menor);
+		
+		scanner.close();
+				
+	}
+
+}
+
+****************************************************************
+INTERVALO
+****************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a;
+						
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza um número: ");
+		a = scanner.nextInt();
+
+		if(a>=50) & (a<=100)	{
+			System.out.println("O número "+a+" está dentro do intervalo");
+		}
+		else	{
+			System.out.println("O número "+a+" está fora do intervalo");	
+		}
+		
+		scanner.close();
+				
+	}
+
+}
+
+*********************************************************************
+ESCALÕES
+*********************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a;
+						
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza a idade do jogador: ");
+		a = scanner.nextInt();
+
+		if(a>10) & (a<=17)	{
+			System.out.println("O jogador é do escalão Juvenil");
+		}
+		else	{
+			if(a<=10)	{
+				System.out.println("O jogador é do escalão Infantil");
+			}
+			else	{
+				System.out.println("O jogador é do escalão Sénior");
+			}
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+**********************************************************************
+ORDENAR
+**********************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a,b,c;
+		int manor,meio,maior;
+						
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza o 1º número: ");
+		a = scanner.nextInt();
+
+		System.out.println("Introduza o 2º número: ");
+		b = scanner.nextInt();
+
+		System.out.println("Introduza o 3º número: ");
+		c = scanner.nextInt();
+
+
+		if(a>b)	{
+			if(b>c)  {
+				menor = c;
+				meio = b;
+				maior = a;
+			}
+			else	{
+				if(a<c)  {
+					menor = b;
+					meio = a;
+					maior = c;
+				}
+				else  {
+					menor = b;
+					meio = c;
+					maior = a;
+				}
+			}
+		}
+		else	{
+			if(b>c)	{
+				if(a>c)	{
+					menor = c;
+					meio = a;
+					maior = b;
+				}
+				else	{
+					menor = a;
+					meio = c;
+					maior = b;
+				}
+			}
+			else	{
+				menor = a;
+				meio = b;
+				maior = c;
+			}
+		}
+
+
+		System.out.println("Números ordenados: "+menor+meio+maior);
+	
+		scanner.close();
+				
+	}
+
+}
+
+****************************************************************************
+IMPRIMIR PARES
+****************************************************************************
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = 2;
+						
+		while (a<=50)	{
+			System.out.println(a);
+			a=a+2;
+		}
+	}
+
+}
+
+***************************************************************************
+CALCULAR DOBRO
+***************************************************************************
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = 1;
+						
+		while (a<=10)	{
+			System.out.println("O dobro de "+a+" é "+(a*2));
+			a++;
+		}
+	}
+
+}
+
+*****************************************************************************
+CONTAR PARES
+*****************************************************************************
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = 2;
+		int b = 0;
+						
+		while (a<=50)	{
+			a = a+2;
+			b++;
+		}
+	System.out.println("O total de números pares entre 1 e 50 é "+b);
+	}
+
+}
+
+*******************************************************************************
+TABUADA
+*******************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a,b;
+						
+		Scanner scanner = new Scanner(System.in);
+				
+		System.out.println("Introduza um número: ");
+		a = scanner.nextInt();
+
+		do	{
+			System.out.println(a+" X "+b+" = "+(a*b));
+			b++;
+		} while (b<11);
+
+		scanner.close();
+				
+	}
+
+}
+
+*************************************************************
+5 PARES
+*************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = new int[5];
+		int b;
+						
+		Scanner scanner = new Scanner(System.in);
+		
+		for (b=0;b<5;b++)  {
+			System.out.println("Introduza o "+b+"º número: ");
+			a[b] = scanner.nextInt();
+		}
+
+		for (b=0;b<5;b++)  {
+			if((a[b])%2=0) {
+				System.out.println("O número "+a[b]+" é par");
+			}
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+******************************************************************
+5 IMPARES
+******************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = new int[5];
+		int b;
+						
+		Scanner scanner = new Scanner(System.in);
+		
+		for (b=0;b<5;b++)  {
+			System.out.println("Introduza o "+b+"º número: ");
+			a[b] = scanner.nextInt();
+		}
+
+		for (b=0;b<5;b++)  {
+			if((a[b])%2==0) {
+				System.out.println("O número "+a[b]+" é ímpar");
+			}
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+***************************************************************************
+CONTAR PARES IMPARES
+***************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a = new int[5];
+		int b
+		int c = 0;
+		char d;
+						
+		Scanner scanner = new Scanner(System.in);
+		
+		for (b=0;b<5;b++)  {
+			System.out.println("Introduza o "+b+"º número: ");
+			a[b] = scanner.nextInt();
+		}
+
+		do {
+			System.out.println("Introduza (p) para contar os pares ou (i) para contar os ímpares");
+			d = scanner.nextChar();
+		}while	{
+			(d=="p") || (d=="P") || (d=="i") || (d=="I");
+		}
+
+		if((d="p") || (d="P")	{
+			for (b=0;b<5;b++)	{
+				if(a[b]&2=0)	{
+					c++;
+				}
+			}
+			System.out.println("O total de números pares é "+c);
+		}
+
+		if((d="i") || (d="I")	{
+			for (b=0;b<5;b++)	{
+				if(a[b]&2=0)	{
+					c++;
+				}
+			}
+			System.out.println("O total de números ímpares é "+c);
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+
+******************************************************************************
+PRIMOS
+******************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a,b,c,d,p;
+								
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Indique o início do intervalo:");
+		a = scanner.nextInt();
+		
+		System.out.println("Indique o fim do intervalo:");
+		b = scanner.nextInt();
+
+		
+		for (c=a;c<=b;c++)  {
+			p=0;
+			for (d=1;d<=c;d++)	{
+				if(c%2=0)	{
+					p++;
+				}
+			}
+			if(p=2)	{
+				System.out.println("Introduza o "+b+"º número: ");
+			}
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+*********************************************************************************
+SOMA
+*********************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int a;
+		int soma = 0;
+								
+		Scanner scanner = new Scanner(System.in);
+
+		do	{
+			System.out.println("Introduza um número inteiro:");
+			a = scanner.nextInt();
+			soma = soma + a;
+		}while	{
+			(a=0) || (soma=100)
+		}
+			
+		System.out.println("A soma é "+soma);
+
+		scanner.close();
+				
+	}
+
+}
+
+**********************************************************************************
+EXERCICIO 1
+**********************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		double enc1,enc2,enc3,enctotal,valor;
+										
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Introduza o peso da 1ª encomenda:");
+		enc1 = scanner.nextDouble();
+
+		System.out.println("Introduza o peso da 2ª encomenda:");
+		enc2 = scanner.nextDouble();
+
+		System.out.println("Introduza o peso da 3ª encomenda:");
+		enc3 = scanner.nextDouble();
+
+		enctotal=enc1+enc2+enc3;
+
+		if(enctotal<=500)	{
+			valor = (enctotal*0.5);
+		}
+		if((enctotal>500)&&(enctotal<=600)	{
+			valor = ((enctotal-500)*5)+(enctotal*0.5);
+		}
+		if((enctotal>600)&&(enctotal<=1000)	{
+			valor = ((enctotal-500)*8)+(enctotal*0.5);
+		}
+		if((enctotal>1000)&&(enctotal<=1500)	{
+			valor = ((enctotal-500)*10)+(enctotal*0.5);
+		}
+		if(enctotal>1500)	{
+			valor = ((enctotal-500)*15)+(enctotal*0.5);
+		}
+		
+		System.out.println("O valor total a pagar é "+valor);
+
+		scanner.close();
+				
+	}
+
+}
+
+*****************************************************************************
+EXERCICIO 2
+*****************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int faltas;
+		double nota1,nota2,media;
+										
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Introduza o número de faltas do aluno:");
+		faltas = scanner.nextInt();
+
+		if(faltas>10)	{
+			System.out.println("REPROVADO POR FALTAS");
+		}else	{
+			System.out.println("Introduza a 1ª nota:");
+			nota1 = scanner.nextDouble();				
+			System.out.println("Introduza a 2ª nota:");
+			nota2 = scanner.nextDouble();
+			media = ((nota1+nota2)/2)
+			if((media>0)&&(media<5)	{
+				System.out.println("Reprovado");
+			}
+			if((media>=5)&&(media<=6)	{
+				System.out.println("Recuperação");
+			}	
+			if((media>6)&&(media<=10)	{
+				System.out.println("Aprovado");
+			}		
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+*********************************************************************************
+EXERCICIO 3
+*********************************************************************************
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int sala;
+												
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Escolha a sala do cinema (1 a 6):");
+		sala = scanner.nextInt();
+
+		switch(sala)	{
+			case 1:
+				System.out.println("Exterminador Implacável");
+			case 2:
+				System.out.println("Pulp Fiction");
+			case 3:
+				System.out.println("O Padrinho");
+			case 4:
+				System.out.println("Titanic");
+			case 5:
+				System.out.println("Avatar");
+			case 6:
+				System.out.println("Matrix");
+		}
+
+		scanner.close();
+				
+	}
+
+}
+
+
+***************************************************************************************
+VETOR 10				certo
+***************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double[] num = new double[10];
+        double positivo = 0;
+        double negativo = 0;
+        int a;
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (a=0;a<10;a++)  {
+            System.out.println("Introduza o "+(a+1)+"º número: ");
+            num[a] = scanner.nextInt();
+            if((num[a])<0)	{
+                negativo++;
+            }else	{
+                positivo = positivo + num[a];
+            }
+        }
+
+
+        System.out.println("Foram introduzidos "+negativo+" números negativos");
+        System.out.println("A soma dos números positivos introduzidos é "+positivo);
+
+        scanner.close();
+
+    }
+
+}
+
+*********************************************************************************************
+MULTIPLOS				certo
+*********************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[] v = new int[7];
+        int[] m2 = new int[7];
+        int[] m3 = new int[7];
+        int[] m23 = new int[7];
+        int a;
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (a=0;a<7;a++)  {
+            System.out.println("Introduza o "+(a+1)+"º número: ");
+            v[a] = scanner.nextInt();
+        }
+        for (a=0;a<7;a++)  {
+            if((v[a] %2 == 0) && (v[a] %3 == 0))	{
+                m23[a]=v[a];
+            }
+            if(v[a] %2 == 0)	{
+                m2[a]=v[a];
+            }
+            if(v[a] %3 == 0)	{
+                m3[a]=v[a];
+            }
+        }
+
+        System.out.println("Os números múltiplos de 2 são: ");
+        for (a=0;a<7;a++)  {
+            if((m2[a]!=0))	{
+                System.out.println(m2[a]);
+            }
+        }
+
+        System.out.println("Os números múltiplos de 3 são: ");
+        for (a=0;a<7;a++)  {
+            if((m3[a]!=0))	{
+                System.out.println(m3[a]);
+            }
+        }
+
+        System.out.println("Os números múltiplos de 2 e de 3 são: ");
+        for (a=0;a<7;a++)  {
+            if((m23[a]!=0))	{
+                System.out.println(m23[a]);
+            }
+        }
+
+        scanner.close();
+
+    }
+
+}
+
+***********************************************************************************
+COLEÇÃO LIVROS				certa
+***********************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double[] livro = new double[20];
+        double total = 0;
+        int a;
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (a=0;a<20;a++)  {
+            System.out.println("Introduza o preço do "+(a+1)+"º livro: ");
+            livro[a] = scanner.nextDouble();
+            if((livro[a])==0)	{
+                break;
+            }else	{
+                total = (total+livro[a]);
+            }
+        }
+
+        System.out.println("O valor total da coleção é "+total+" e tem "+a+" livros, com um custo médio de "+(total/a));
+
+        scanner.close();
+    }
+}
+
+******************************************************************************************
+QUATRO VETORES				certo
+******************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[] i1 = new int[10];
+        int[] i2 = new int[5];
+        int[] v1 = new int[10];
+        int[] v2 = new int[10];
+        int a;
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (a=0;a<10;a++)  {
+            System.out.println("Introduza o "+(a+1)+"º número do 1º vetor: ");
+            i1[a] = scanner.nextInt();
+        }
+
+        for (a=0;a<5;a++)  {
+            System.out.println("Introduza o "+(a+1)+"º número do 2º vetor: ");
+            i2[a] = scanner.nextInt();
+        }
+
+        for (a=0;a<5;a++)  {
+            v1[a]=(i1[(a*2)])+(i1[(a*2)+1]);
+            v1[a+5]=i2[a];
+        }
+
+        for (a=0;a<10;a++)  {
+            if(v1[a] %2 != 0)	{
+                v2[a]=v1[a];
+            }
+            if(i1[a] %2 != 0)	{
+                v2[a]=i1[a];
+            }
+        }
+
+        System.out.println("O vetor carregado com os valores emparelhados introduzidos no 1º vetor, seguido dos valores introduzidos no 2º vetor");
+
+        for (a=0;a<10;a++)  {
+            System.out.println(v1[a]);
+        }
+
+        System.out.println("O vetor carregado com os valores ímpares de todos os vetores anteriores");
+
+        for (a=0;a<10;a++) {
+            if (v2[a] != 0) {
+                System.out.println(v2[a]);
+            }
+        }
+
+        scanner.close();
+
+    }
+
+}
+
+************************************************************************************************
+MATRIZES - EXERCICIO 1				certo
+************************************************************************************************
+
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] v = new int[3][3];
+        int x,y;
+
+        for (x=0;x<3;x++) {
+            for (y = 0; y < 3; y++) {
+                v[x][y] = (int) (Math.random() * 10);
+                System.out.println("Matriz " + x + "," + y + ":" + v[x][y]);
+            }
+        }
+        for (x=0;x<3;x++)  {
+             for (y=0;y<3;y++)  {
+                    if((v[x][y]) %2 == 0)	{
+                        System.out.println(v[x][y]);
+                    }
+             }
+        }
+    }
+}
+
+***************************************************************************************
+MATRIZES - EXERCICIO 2			certo
+***************************************************************************************
+
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] v = new int[2][3];
+        int a,b,x,y;
+
+        for (x=0;x<2;x++)  {
+            for (y=0;y<3;y++)  {
+                v[x][y] = (int)(Math.random()*10);
+                System.out.println("Matriz "+x+","+y+":"+v[x][y]);
+                for (a=0;a<x;a++)  {
+                    for (b=0;y<(y);y++)  {
+                        if((v[x][y])==(v[a][b]))	{
+                            v[x][y] = (int)(Math.random()*10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+******************************************************************************************
+MATRIZES - EXERCICIO 3			não testado
+******************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] u = new int [4][4];
+        int[][] v = new int [4][4];
+        int a,b,x,y;
+
+        System.out.println("Introduza os valores para a 1ª matriz:");
+
+        for (x=0;x<4;x++)  {
+            for (y=0;y<4;y++)  {
+                System.out.println("posição "+x+","+y+":");
+                u[x][y] = scanner.nextInt();
+            }
+        }
+
+        for (x=0;x<4;x++)  {
+            for (y=0;y<4;y++)  {
+                System.out.println("posição "+x+","+y+":");
+                v[x][y] = scanner.nextInt();
+            }
+        }
+
+        for (x=0;x<4;x++)  {
+            for (y=0;y<4;y++)  {
+                for (a=0;a<4;a++)  {
+                    for (b=0;b<4;b++)  {
+                        if(u[x][y] == v[a][b])  {
+                            System.out.println(u[x][y]);
+                        }
+                    }
+                }
+            }
+        }
+        scanner.close();
+    }
+}
+
+
+***************************************************************************************
+MATRIZES - EXERCICIO 4			não testado
+***************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int[][] v = new int [3][3];
+        int z,a,b,x,y;
+
+        System.out.println("Introduza os valores para a matriz:");
+
+        for (x=0;x<3;x++)  {
+            for (y=0;y<3;y++)  {
+                System.out.println("posição "+x+","+y+":");
+                v[x][y] = scanner.nextInt();
+            }
+        }
+
+        for (x=0;x<3;x++)  {
+            for (y=0;y<3;y++)  {
+                for (a=0;a<3;a++)  {
+                    for (b=0;b<3;b++)  {
+                        if(v[x][y] < v[a][b])  {
+                            z=v[x][y];
+                            v[x][y]=v[a][b];
+                            v[a][b]=z;
+                        }
+                    }
+                }
+            }
+        }
+
+        for (x=0;x<3;x++)  {
+            for (y=0;y<3;y++)  {
+                System.out.println(v[x][y]);
+            }
+        }
+        scanner.close();
+    }
+}
+
+********************************************************************************
+FUNÇÕES - EXERCICIO 1		não testado
+********************************************************************************
+
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static double calcular_minutos(){
+
+        minutos = (anos*525960)+(meses*43830)+(dias*1440);
+        return minutos;
+    }
+
+    public static void main(String[] args) {
+
+        int a,anos,meses,dias;
+        double minutos;
+
+
+        System.out.println("Introduza o número de anos:");
+        anos = scanner.nextInt();
+
+        System.out.println("Introduza o número de meses:");
+        meses = scanner.nextInt();
+
+        System.out.println("Introduza o número de dias:");
+        dias = scanner.nextInt();
+
+        System.out.println("Quer o resultado em minutos (1) ou em segundos (2)?");
+        a = scanner.nextInt();
+
+        minutos = calcular_minutos();
+
+        switch(a)	{
+            case 1:
+                System.out.println("A sua idade em minutos é:"+minutos);
+            case 2:
+                System.out.println("A sua idade em segundos é:"+(minutos*60));
+        }
+        scanner.close();
+    }
+}
+
+****************************************************************************************
+FUNÇÕES - EXERCICIO 2			não testado
+****************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static boolean par_impar(){
+
+        int a = 0;
+        boolean x;
+
+        x = (a % 2 == 0);
+        return x;
+    }
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int a;
+        boolean x;
+
+        System.out.println("Introduza um número inteiro:");
+        a = scanner.nextInt();
+
+        x = par_impar();
+
+        if(x=true)	{
+            System.out.println("O número"+a+" é par");
+        }else	{
+            System.out.println("O número"+a+" é ímpar");
+        }
+        scanner.close();
+    }
+}
+
+
+*******************************************************************************************
+FUNÇÕES - EXERCICIO 3			não testado
+*******************************************************************************************
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+        public static int maior_menor(){
+
+            int[] a = new int [50];
+            int maior = 0;
+            int menor = 0;
+            int x;
+
+            for (x=0;x<50;x++)	{
+                if(menor>a[x])	{
+                    menor = a[x];
+                }
+                if(maior<a[x])	{
+                    maior = a[x];
+                }
+            }
+            return maior; return menor;
+        }
+
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+
+            int[] a = new int [50];
+            int x,maior,menor;
+
+            System.out.println("Introduza 50 números inteiros:");
+
+            for (x=0;x<50;x++)	{
+                a[x] = scanner.nextInt();
+            }
+
+            menor = maior_menor();
+            maior = maior_menor();
+
+            System.out.println("O menor número introduzido é o"+menor+" e o maior número introduzido é o"+maior);
+
+            scanner.close();
+        }
+}
+
+*****************************************************************************************
+FUNÇÕES - EXERCICIO 4			não testado
+*****************************************************************************************
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static double potencia(){
+
+        int x = 0;
+        int z = 0;
+        double p;
+
+        p = Math.pow(x,z);
+        return p;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int x,z;
+        double p;
+
+        System.out.println("Introduza o termo x:");
+        x = scanner.nextInt();
+
+        System.out.println("Introduza o termo z:");
+        z = scanner.nextInt();
+
+        p = potencia();
+
+        System.out.println("O valor do número "+x+" elevado à potência "+z+" é: "+p);
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,7 @@
 Algoritmo "funções - exercicio3"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 09/02/2022
 Var
@@ -18,8 +21,6 @@ para x de 1 ate 50 faca
    se maior<a[x] entao
       maior<-a[x]
    fimse
-fimpara
-
 retorne maior,menor
 
 fimfuncao
@@ -27,15 +28,20 @@ fimfuncao
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
 
-escreval("Introduza 50 números inteiros:")
+
 para x de 1 ate 50 faca
-    leia(a[x])
+     escreval("Introduza 50 números inteiros:")
+     leia(a[x])
 fimpara
 
-menor<-maior_menor
-maior<-maior_menor
+menor<-a[1]
+valor<-maior_menor
 
-escreval("O menor número introduzido é o",menor," e o maior número introduzido é o",maior)
+se (valor)=VERDADEIRO entao
+      escreval("O número",a," é par")
+senao
+      escreval("O número",a," é ímpar")
+fimse
 
 
 

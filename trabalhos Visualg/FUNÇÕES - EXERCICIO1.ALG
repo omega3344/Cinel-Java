@@ -1,13 +1,17 @@
 Algoritmo "funções - exercicio1"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 09/02/2022
 Var
 // Seção de Declarações das variáveis 
 
 a,anos,meses,dias:inteiro
-minutos:real
+resultado:inteiro
+minutos:inteiro
 
-funcao calcular_minutos:real
+funcao calcular_minutos:inteiro
 
 inicio
 
@@ -26,17 +30,18 @@ leia(meses)
 escreval("Introduza o número de dias:")
 leia(dias)
 
-minutos<-calcular_minutos
+resultado<-calcular_minutos
 
 escreval("quer o resultado em minutos (1) ou segundos (2)?")
 leia(a)
 
 escolha (a)
         caso 1
-             escreval("a sua idade em minutos é",minutos)
+             escreval("a sua idade em minutos é",resultado)
         caso 2
-             escreval("a sua idade em segundos é",(minutos*60))
+             escreval("a sua idade em segundos é",(resultado*60))
 fimescolha
+
 
 
 
